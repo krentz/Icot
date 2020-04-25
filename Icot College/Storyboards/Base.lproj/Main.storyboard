@@ -12,12 +12,82 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Icot_College" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ihl-Im-T16">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="wTg-pu-t7e">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="169"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORA-kH-0RF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="169"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icot10years" translatesAutoresizingMaskIntoConstraints="NO" id="4ba-Yp-jbr">
+                                                    <rect key="frame" x="20" y="28" width="147" height="113"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="147" id="vUC-uF-xXd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best English school of the world! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSg-Oj-PcQ">
+                                                    <rect key="frame" x="177" y="53.5" width="222" height="62.5"/>
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="PSg-Oj-PcQ" firstAttribute="centerY" secondItem="4ba-Yp-jbr" secondAttribute="centerY" id="4De-FN-ZEH"/>
+                                                <constraint firstItem="4ba-Yp-jbr" firstAttribute="leading" secondItem="ORA-kH-0RF" secondAttribute="leading" constant="20" id="FuK-2z-tv4"/>
+                                                <constraint firstItem="4ba-Yp-jbr" firstAttribute="top" secondItem="ORA-kH-0RF" secondAttribute="top" constant="28" id="Xe3-Qt-pex"/>
+                                                <constraint firstItem="PSg-Oj-PcQ" firstAttribute="leading" secondItem="4ba-Yp-jbr" secondAttribute="trailing" constant="10" id="a64-vt-TJf"/>
+                                                <constraint firstAttribute="trailing" secondItem="PSg-Oj-PcQ" secondAttribute="trailing" constant="15" id="apG-MZ-8F3"/>
+                                                <constraint firstAttribute="bottom" secondItem="4ba-Yp-jbr" secondAttribute="bottom" constant="28" id="zFb-Fs-K5h"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="ORA-kH-0RF" firstAttribute="leading" secondItem="wTg-pu-t7e" secondAttribute="leading" id="55P-e9-R9a"/>
+                                        <constraint firstAttribute="bottom" secondItem="ORA-kH-0RF" secondAttribute="bottom" id="Lz2-SQ-jwT"/>
+                                        <constraint firstAttribute="trailing" secondItem="ORA-kH-0RF" secondAttribute="trailing" id="rIH-pw-D00"/>
+                                        <constraint firstItem="ORA-kH-0RF" firstAttribute="top" secondItem="wTg-pu-t7e" secondAttribute="top" id="wGD-gZ-YVa"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="M8h-zd-lhJ">
+                                        <rect key="frame" x="0.0" y="197" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M8h-zd-lhJ" id="lpR-D1-7D2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ihl-Im-T16" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MBU-zp-Lax"/>
+                            <constraint firstItem="Ihl-Im-T16" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NOJ-E8-aHc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ihl-Im-T16" secondAttribute="bottom" constant="-34" id="WiU-U1-uxF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ihl-Im-T16" secondAttribute="trailing" id="hrj-k9-X7R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XDD-P6-Sze"/>
+                    <navigationItem key="navigationItem" id="XDD-P6-Sze">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" image="bell" catalog="system" id="CsR-e5-Xsq"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="headerSubview" destination="ORA-kH-0RF" id="WjY-rY-hlK"/>
+                        <outlet property="headerView" destination="wTg-pu-t7e" id="P41-ku-lxs"/>
+                        <outlet property="notificationBartButtonItem" destination="CsR-e5-Xsq" id="Xvt-4F-18A"/>
+                        <outlet property="tableView" destination="Ihl-Im-T16" id="4vb-XR-SW2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,7 +98,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u4V-2F-wOD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7lS-SQ-a67">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="7lS-SQ-a67">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -42,4 +112,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="icot10years" width="253" height="120"/>
+    </resources>
 </document>

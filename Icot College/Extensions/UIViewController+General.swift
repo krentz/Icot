@@ -76,18 +76,87 @@ extension UIViewController {
                }
     }
     
-    func setTitleCenter(_ title: String, andImage image: UIImage) {
+    func setTitleCenter(_ title: String, color: UIColor, withImage image: UIImage?) {
         let titleLbl = UILabel()
         titleLbl.text = title
-        titleLbl.textColor = UIColor.white
+        titleLbl.textColor = color
         titleLbl.font = UIFont.systemFont(ofSize: 20.0, weight: .bold)
         let imageView = UIImageView(image: image)
-        let titleView = UIStackView(arrangedSubviews: [imageView, titleLbl])
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+                imageView.widthAnchor.constraint(equalToConstant: 37),
+                imageView.heightAnchor.constraint(equalToConstant: 37)
+        ])
+        let titleView = UIStackView(arrangedSubviews: [imageView,titleLbl])
+        titleView.axis = .horizontal
+        titleView.spacing = 10.0
+        navigationItem.titleView = titleView
+    }
+     
+    
+    func setTitleCenterWithoutImage(_ title: String, color: UIColor) {
+        let titleLbl = UILabel()
+        titleLbl.text = title
+        titleLbl.textColor = color
+        titleLbl.font = UIFont.systemFont(ofSize: 20.0, weight: .bold)
+        
+        let titleView = UIStackView(arrangedSubviews: [titleLbl])
         titleView.axis = .horizontal
         titleView.spacing = 10.0
         navigationItem.titleView = titleView
     }
     
-    
-    
+    func setTitleLeft(_ title: String, color: UIColor, andImage image: UIImage) {
+           let titleLbl = UILabel()
+           titleLbl.text = title
+            titleLbl.textColor = color
+           let imageView = UIImageView(image: image)
+           imageView.translatesAutoresizingMaskIntoConstraints = false
+           NSLayoutConstraint.activate([
+                   imageView.widthAnchor.constraint(equalToConstant: 37),
+                   imageView.heightAnchor.constraint(equalToConstant: 37)
+           ])
+           let spacer = UIView()
+           let constraint = spacer.widthAnchor.constraint(greaterThanOrEqualToConstant: CGFloat.greatestFiniteMagnitude)
+           constraint.isActive = true
+           constraint.priority = .defaultLow
+           
+           imageView.contentMode = .scaleAspectFit
+           let titleView = UIStackView(arrangedSubviews: [imageView, titleLbl,spacer])
+           titleView.distribution = .fill
+           titleView.axis = .horizontal
+           titleView.spacing = 5
+           titleView.translatesAutoresizingMaskIntoConstraints = false
+           navigationItem.titleView = titleView
+           
+           let navigationBarTitleView = titleView
+           navigationBarTitleView.translatesAutoresizingMaskIntoConstraints = false
+           navigationItem.titleView = navigationBarTitleView
+
+           if let navigationBar = navigationController?.navigationBar {
+               NSLayoutConstraint.activate([
+                           titleView.leadingAnchor.constraint(equalTo: navigationBar.leadingAnchor, constant: 10),
+                           titleView.heightAnchor.constraint(equalToConstant: 50)
+                      ])
+                  }
+       }
+    func setGradientBackground() {
+        let colorTop =  UIColor.icotColor.cgColor
+        let colorBottom = UIColor.icotLight.cgColor
+
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorTop, colorBottom]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.view.bounds
+
+        self.view.layer.insertSublayer(gradientLayer, at:0)
+    }
+}
+extension UIView {
+   func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
+    }
 }
