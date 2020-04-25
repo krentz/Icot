@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C472C622454489500D0E4A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C612454489500D0E4A5 /* AppDelegate.swift */; };
 		3C472C642454489500D0E4A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C632454489500D0E4A5 /* SceneDelegate.swift */; };
-		3C472C662454489500D0E4A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C652454489500D0E4A5 /* ViewController.swift */; };
+		3C472C662454489500D0E4A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C652454489500D0E4A5 /* HomeViewController.swift */; };
 		3C472C692454489500D0E4A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C472C672454489500D0E4A5 /* Main.storyboard */; };
 		3C472C6B2454489C00D0E4A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C472C6A2454489C00D0E4A5 /* Assets.xcassets */; };
 		3C472C6E2454489C00D0E4A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C472C6C2454489C00D0E4A5 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		3C472C5E2454489500D0E4A5 /* Icot College.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Icot College.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C472C612454489500D0E4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C472C632454489500D0E4A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C472C652454489500D0E4A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C472C652454489500D0E4A5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3C472C682454489500D0E4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C472C6A2454489C00D0E4A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C472C6D2454489C00D0E4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				3C472C602454489500D0E4A5 /* Icot College */,
+				3C472C7624544B8600D0E4A5 /* Resources */,
 				3C472C5F2454489500D0E4A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,13 +59,36 @@
 			children = (
 				3C472C612454489500D0E4A5 /* AppDelegate.swift */,
 				3C472C632454489500D0E4A5 /* SceneDelegate.swift */,
-				3C472C652454489500D0E4A5 /* ViewController.swift */,
-				3C472C672454489500D0E4A5 /* Main.storyboard */,
-				3C472C6A2454489C00D0E4A5 /* Assets.xcassets */,
-				3C472C6C2454489C00D0E4A5 /* LaunchScreen.storyboard */,
-				3C472C6F2454489C00D0E4A5 /* Info.plist */,
+				3C472C7724544B9900D0E4A5 /* Storyboards */,
+				3C472C652454489500D0E4A5 /* HomeViewController.swift */,
 			);
 			path = "Icot College";
+			sourceTree = "<group>";
+		};
+		3C472C7624544B8600D0E4A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C472C6A2454489C00D0E4A5 /* Assets.xcassets */,
+				3C472C6F2454489C00D0E4A5 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C472C7724544B9900D0E4A5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3C472C7824544BB300D0E4A5 /* LauchScreen */,
+				3C472C672454489500D0E4A5 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3C472C7824544BB300D0E4A5 /* LauchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3C472C6C2454489C00D0E4A5 /* LaunchScreen.storyboard */,
+			);
+			path = LauchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C472C662454489500D0E4A5 /* ViewController.swift in Sources */,
+				3C472C662454489500D0E4A5 /* HomeViewController.swift in Sources */,
 				3C472C622454489500D0E4A5 /* AppDelegate.swift in Sources */,
 				3C472C642454489500D0E4A5 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,8 +309,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QCZJ9823CD;
-				INFOPLIST_FILE = "Icot College/Info.plist";
+				DEVELOPMENT_TEAM = R8ZX2P739G;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,8 +327,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QCZJ9823CD;
-				INFOPLIST_FILE = "Icot College/Info.plist";
+				DEVELOPMENT_TEAM = R8ZX2P739G;
+				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
