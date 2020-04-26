@@ -18,6 +18,11 @@
 		3C472C872454D4C500D0E4A5 /* UIColor+Adds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C862454D4C500D0E4A5 /* UIColor+Adds.swift */; };
 		3C472C8C2454E9B600D0E4A5 /* UINavigationBar+Adds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C8B2454E9B600D0E4A5 /* UINavigationBar+Adds.swift */; };
 		3C472C8E2454F81C00D0E4A5 /* UIView+Adds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C8D2454F81C00D0E4A5 /* UIView+Adds.swift */; };
+		3C472C912454FA2D00D0E4A5 /* HomeViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C902454FA2D00D0E4A5 /* HomeViewController2.swift */; };
+		3C472C952455051800D0E4A5 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C932455051800D0E4A5 /* ItemCollectionViewCell.swift */; };
+		3C472C962455051800D0E4A5 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C472C942455051800D0E4A5 /* ItemCollectionViewCell.xib */; };
+		3C4930F42455680B00C6A2A4 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4930F32455680B00C6A2A4 /* Onboarding.storyboard */; };
+		3C4930F72455688400C6A2A4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4930F62455688400C6A2A4 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		3C472C862454D4C500D0E4A5 /* UIColor+Adds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Adds.swift"; sourceTree = "<group>"; };
 		3C472C8B2454E9B600D0E4A5 /* UINavigationBar+Adds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Adds.swift"; sourceTree = "<group>"; };
 		3C472C8D2454F81C00D0E4A5 /* UIView+Adds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Adds.swift"; sourceTree = "<group>"; };
+		3C472C902454FA2D00D0E4A5 /* HomeViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController2.swift; sourceTree = "<group>"; };
+		3C472C932455051800D0E4A5 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C472C942455051800D0E4A5 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		3C4930F32455680B00C6A2A4 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		3C4930F62455688400C6A2A4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +81,8 @@
 				3C472C632454489500D0E4A5 /* SceneDelegate.swift */,
 				3C472C85245456A800D0E4A5 /* Extensions */,
 				3C472C7724544B9900D0E4A5 /* Storyboards */,
-				3C472C652454489500D0E4A5 /* HomeViewController.swift */,
+				3C472C8F2454F9F500D0E4A5 /* Home Controllers */,
+				3C4930F52455682F00C6A2A4 /* Onboarding Controllers */,
 			);
 			path = "Icot College";
 			sourceTree = "<group>";
@@ -88,7 +99,9 @@
 		3C472C7724544B9900D0E4A5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				3C472C92245504EE00D0E4A5 /* CustomViews */,
 				3C472C7824544BB300D0E4A5 /* LaunchScreen */,
+				3C4930F32455680B00C6A2A4 /* Onboarding.storyboard */,
 				3C472C672454489500D0E4A5 /* Main.storyboard */,
 			);
 			path = Storyboards;
@@ -112,6 +125,32 @@
 				3C472C862454D4C500D0E4A5 /* UIColor+Adds.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C472C8F2454F9F500D0E4A5 /* Home Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C472C652454489500D0E4A5 /* HomeViewController.swift */,
+				3C472C902454FA2D00D0E4A5 /* HomeViewController2.swift */,
+			);
+			path = "Home Controllers";
+			sourceTree = "<group>";
+		};
+		3C472C92245504EE00D0E4A5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3C472C932455051800D0E4A5 /* ItemCollectionViewCell.swift */,
+				3C472C942455051800D0E4A5 /* ItemCollectionViewCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3C4930F52455682F00C6A2A4 /* Onboarding Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C4930F62455688400C6A2A4 /* WelcomeViewController.swift */,
+			);
+			path = "Onboarding Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +212,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C472C6B2454489C00D0E4A5 /* Assets.xcassets in Resources */,
+				3C4930F42455680B00C6A2A4 /* Onboarding.storyboard in Resources */,
+				3C472C962455051800D0E4A5 /* ItemCollectionViewCell.xib in Resources */,
 				3C472C7E2454508600D0E4A5 /* LaunchScreen.xib in Resources */,
 				3C472C692454489500D0E4A5 /* Main.storyboard in Resources */,
 			);
@@ -187,12 +228,15 @@
 			files = (
 				3C472C662454489500D0E4A5 /* HomeViewController.swift in Sources */,
 				3C472C84245456A500D0E4A5 /* UIViewController+General.swift in Sources */,
+				3C4930F72455688400C6A2A4 /* WelcomeViewController.swift in Sources */,
 				3C472C622454489500D0E4A5 /* AppDelegate.swift in Sources */,
 				3C472C8C2454E9B600D0E4A5 /* UINavigationBar+Adds.swift in Sources */,
 				3C472C8E2454F81C00D0E4A5 /* UIView+Adds.swift in Sources */,
+				3C472C952455051800D0E4A5 /* ItemCollectionViewCell.swift in Sources */,
 				3C472C872454D4C500D0E4A5 /* UIColor+Adds.swift in Sources */,
 				3C472C80245450F300D0E4A5 /* LaunchScreenManager.swift in Sources */,
 				3C472C642454489500D0E4A5 /* SceneDelegate.swift in Sources */,
+				3C472C912454FA2D00D0E4A5 /* HomeViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
