@@ -23,6 +23,10 @@
 		3C472C962455051800D0E4A5 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C472C942455051800D0E4A5 /* ItemCollectionViewCell.xib */; };
 		3C4930F42455680B00C6A2A4 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4930F32455680B00C6A2A4 /* Onboarding.storyboard */; };
 		3C4930F72455688400C6A2A4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4930F62455688400C6A2A4 /* WelcomeViewController.swift */; };
+		3CB7FE61245A9BCB00CBA4BC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE60245A9BCB00CBA4BC /* BaseViewController.swift */; };
+		3CB7FE63245AA36000CBA4BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE62245AA36000CBA4BC /* LoginViewController.swift */; };
+		3CB7FE65245AA3A500CBA4BC /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE64245AA3A500CBA4BC /* TourViewController.swift */; };
+		3CB7FE68245AA67200CBA4BC /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE67245AA67200CBA4BC /* AppButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		3C472C942455051800D0E4A5 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		3C4930F32455680B00C6A2A4 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		3C4930F62455688400C6A2A4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		3CB7FE60245A9BCB00CBA4BC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3CB7FE62245AA36000CBA4BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3CB7FE64245AA3A500CBA4BC /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
+		3CB7FE67245AA67200CBA4BC /* AppButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +87,8 @@
 			children = (
 				3C472C612454489500D0E4A5 /* AppDelegate.swift */,
 				3C472C632454489500D0E4A5 /* SceneDelegate.swift */,
-				3C472C85245456A800D0E4A5 /* Extensions */,
+				3CB7FE60245A9BCB00CBA4BC /* BaseViewController.swift */,
+				3CB7FE69245AAC9700CBA4BC /* General */,
 				3C472C7724544B9900D0E4A5 /* Storyboards */,
 				3C472C8F2454F9F500D0E4A5 /* Home Controllers */,
 				3C4930F52455682F00C6A2A4 /* Onboarding Controllers */,
@@ -149,8 +158,27 @@
 			isa = PBXGroup;
 			children = (
 				3C4930F62455688400C6A2A4 /* WelcomeViewController.swift */,
+				3CB7FE62245AA36000CBA4BC /* LoginViewController.swift */,
+				3CB7FE64245AA3A500CBA4BC /* TourViewController.swift */,
 			);
 			path = "Onboarding Controllers";
+			sourceTree = "<group>";
+		};
+		3CB7FE66245AA64C00CBA4BC /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				3CB7FE67245AA67200CBA4BC /* AppButton.swift */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+		3CB7FE69245AAC9700CBA4BC /* General */ = {
+			isa = PBXGroup;
+			children = (
+				3C472C85245456A800D0E4A5 /* Extensions */,
+				3CB7FE66245AA64C00CBA4BC /* Custom Components */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +259,15 @@
 				3C4930F72455688400C6A2A4 /* WelcomeViewController.swift in Sources */,
 				3C472C622454489500D0E4A5 /* AppDelegate.swift in Sources */,
 				3C472C8C2454E9B600D0E4A5 /* UINavigationBar+Adds.swift in Sources */,
+				3CB7FE61245A9BCB00CBA4BC /* BaseViewController.swift in Sources */,
+				3CB7FE65245AA3A500CBA4BC /* TourViewController.swift in Sources */,
 				3C472C8E2454F81C00D0E4A5 /* UIView+Adds.swift in Sources */,
 				3C472C952455051800D0E4A5 /* ItemCollectionViewCell.swift in Sources */,
+				3CB7FE68245AA67200CBA4BC /* AppButton.swift in Sources */,
 				3C472C872454D4C500D0E4A5 /* UIColor+Adds.swift in Sources */,
 				3C472C80245450F300D0E4A5 /* LaunchScreenManager.swift in Sources */,
 				3C472C642454489500D0E4A5 /* SceneDelegate.swift in Sources */,
+				3CB7FE63245AA36000CBA4BC /* LoginViewController.swift in Sources */,
 				3C472C912454FA2D00D0E4A5 /* HomeViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

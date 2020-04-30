@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qfx-iT-9Bl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -15,68 +15,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf4-fZ-1Kr">
-                                <rect key="frame" x="20" y="138" width="374" height="81.5"/>
-                                <string key="text">Seja Bem-vindo a ICOT! Neste app voce encontrará todas infromações sobre a escola, o intercambio e muito mais! Antes de começar. VOCÊ JÁ É ALUNO?</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neste app voce encontrará todas infromações sobre a escola, o intercambio e muito mais! Antes de começar. Você já é aluno?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf4-fZ-1Kr">
+                                <rect key="frame" x="20" y="333" width="374" height="59.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ae1-JF-Qx5">
-                                <rect key="frame" x="20" y="245" width="374" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="m4l-h4-U8e">
+                                <rect key="frame" x="20" y="439" width="374" height="45"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GsR-XN-Tec">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="60"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVs-g1-Acx" customClass="AppButton" customModule="Icot_College" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="45"/>
                                         <state key="normal" title="Não"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHollowButton" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="5Sv-lx-khi" kind="show" id="JHP-jz-B3A"/>
+                                            <segue destination="5Sv-lx-khi" kind="show" id="axg-2T-Bpb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzV-LD-ecj">
-                                        <rect key="frame" x="187" y="0.0" width="187" height="60"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjK-Zq-kPk" customClass="AppButton" customModule="Icot_College" customModuleProvider="target">
+                                        <rect key="frame" x="202" y="0.0" width="172" height="45"/>
                                         <state key="normal" title="Sim"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHollowButton" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="rIV-9G-Vxc" kind="show" id="2IR-Xr-rV5"/>
+                                            <segue destination="rIV-9G-Vxc" kind="show" id="ehV-OO-KOu"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="8rk-jR-bId"/>
-                                    <constraint firstAttribute="trailing" secondItem="IzV-LD-ecj" secondAttribute="trailing" id="CHm-kl-Y3h"/>
-                                    <constraint firstItem="GsR-XN-Tec" firstAttribute="top" secondItem="ae1-JF-Qx5" secondAttribute="top" id="E9R-Ls-H1P"/>
-                                    <constraint firstItem="GsR-XN-Tec" firstAttribute="leading" secondItem="ae1-JF-Qx5" secondAttribute="leading" id="Fk4-xL-kDE"/>
-                                    <constraint firstItem="IzV-LD-ecj" firstAttribute="leading" secondItem="GsR-XN-Tec" secondAttribute="trailing" id="MCL-cw-kjE"/>
-                                    <constraint firstItem="IzV-LD-ecj" firstAttribute="leading" secondItem="GsR-XN-Tec" secondAttribute="trailing" id="NKU-dh-etW"/>
-                                    <constraint firstAttribute="bottom" secondItem="GsR-XN-Tec" secondAttribute="bottom" id="bzM-m4-gjT"/>
-                                    <constraint firstAttribute="bottom" secondItem="IzV-LD-ecj" secondAttribute="bottom" id="cxj-BA-S44"/>
-                                    <constraint firstItem="IzV-LD-ecj" firstAttribute="top" secondItem="ae1-JF-Qx5" secondAttribute="top" id="lPb-rM-Nj5"/>
+                                    <constraint firstAttribute="height" constant="45" id="Kx1-R7-mmu"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja bem vindo! Antes de começarmos, você já conhece a escola? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEq-UO-bLf">
-                                <rect key="frame" x="33" y="356" width="361" height="132"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="132" id="aiK-ch-fXA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja bem-vindo a ICOT College!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-ro-eiK">
+                                <rect key="frame" x="20" y="108" width="374" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icot10years" translatesAutoresizingMaskIntoConstraints="NO" id="4YJ-Ln-TJC">
+                                <rect key="frame" x="80.5" y="183" width="253" height="120"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.10980392160000001" green="0.61568627450000002" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="4YJ-Ln-TJC" firstAttribute="centerX" secondItem="2ia-ro-eiK" secondAttribute="centerX" id="8OX-5l-img"/>
                             <constraint firstItem="Zf4-fZ-1Kr" firstAttribute="leading" secondItem="tla-kV-8iR" secondAttribute="leading" constant="20" id="BIr-j8-nPJ"/>
-                            <constraint firstItem="YEq-UO-bLf" firstAttribute="top" secondItem="ae1-JF-Qx5" secondAttribute="bottom" constant="51" id="CRx-FT-9gJ"/>
-                            <constraint firstItem="YEq-UO-bLf" firstAttribute="trailing" secondItem="ae1-JF-Qx5" secondAttribute="trailing" id="Gva-VA-Vh1"/>
-                            <constraint firstItem="ae1-JF-Qx5" firstAttribute="trailing" secondItem="Zf4-fZ-1Kr" secondAttribute="trailing" id="YVM-uP-03k"/>
-                            <constraint firstItem="YEq-UO-bLf" firstAttribute="leading" secondItem="ae1-JF-Qx5" secondAttribute="leading" constant="13" id="ZKS-IE-QyV"/>
-                            <constraint firstItem="ae1-JF-Qx5" firstAttribute="top" secondItem="Zf4-fZ-1Kr" secondAttribute="bottom" constant="25.5" id="cmL-k1-RlN"/>
+                            <constraint firstItem="tla-kV-8iR" firstAttribute="trailing" secondItem="2ia-ro-eiK" secondAttribute="trailing" constant="20" id="CrX-P1-Yxr"/>
+                            <constraint firstItem="Zf4-fZ-1Kr" firstAttribute="top" secondItem="4YJ-Ln-TJC" secondAttribute="bottom" constant="30" id="PQI-i7-HdX"/>
+                            <constraint firstItem="2ia-ro-eiK" firstAttribute="top" secondItem="tla-kV-8iR" secondAttribute="top" constant="20" id="Rky-hm-n3L"/>
+                            <constraint firstItem="m4l-h4-U8e" firstAttribute="top" secondItem="Zf4-fZ-1Kr" secondAttribute="bottom" constant="46.5" id="bpe-yA-34B"/>
                             <constraint firstAttribute="trailing" secondItem="Zf4-fZ-1Kr" secondAttribute="trailing" constant="20" id="htY-v1-jcM"/>
-                            <constraint firstItem="ae1-JF-Qx5" firstAttribute="leading" secondItem="Zf4-fZ-1Kr" secondAttribute="leading" id="jm9-oa-Hfp"/>
-                            <constraint firstItem="Zf4-fZ-1Kr" firstAttribute="top" secondItem="tla-kV-8iR" secondAttribute="top" constant="50" id="rNA-YS-3Ys"/>
+                            <constraint firstItem="2ia-ro-eiK" firstAttribute="leading" secondItem="tla-kV-8iR" secondAttribute="leading" constant="20" id="k3U-MF-q5f"/>
+                            <constraint firstItem="m4l-h4-U8e" firstAttribute="trailing" secondItem="Zf4-fZ-1Kr" secondAttribute="trailing" id="pqa-th-XLr"/>
+                            <constraint firstItem="4YJ-Ln-TJC" firstAttribute="top" secondItem="2ia-ro-eiK" secondAttribute="bottom" constant="15" id="yHS-YE-vqA"/>
+                            <constraint firstItem="m4l-h4-U8e" firstAttribute="leading" secondItem="Zf4-fZ-1Kr" secondAttribute="leading" id="ylk-Pg-4Yv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tla-kV-8iR"/>
                     </view>
@@ -86,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="518.84057971014499" y="-46.205357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Tour View Controller-->
         <scene sceneID="hGI-eY-dBx">
             <objects>
-                <viewController id="5Sv-lx-khi" sceneMemberID="viewController">
+                <viewController id="5Sv-lx-khi" customClass="TourViewController" customModule="Icot_College" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxL-du-WqV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="-391.304347826087" y="-46.205357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="0gl-aR-z3f">
             <objects>
-                <viewController id="rIV-9G-Vxc" sceneMemberID="viewController">
+                <viewController id="rIV-9G-Vxc" customClass="LoginViewController" customModule="Icot_College" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kbL-M2-mlw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,4 +221,7 @@
             <point key="canvasLocation" x="1394.2028985507247" y="326.78571428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icot10years" width="253" height="120"/>
+    </resources>
 </document>

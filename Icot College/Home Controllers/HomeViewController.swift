@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
     @IBOutlet weak var notificationBartButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
@@ -24,12 +24,8 @@ class HomeViewController: UIViewController {
     func baseInit(){
         
         //set bar style
-        navigationController?.navigationBar.barTintColor = UIColor.icotColor
-        navigationController?.navigationBar.shouldRemoveShadow(true)
-        setTitleCenter("Icot College", color: .white, withImage: UIImage(named: "icotWhiteLogo"))
         notificationBartButtonItem.tintColor = .white
         headerSubview.backgroundColor = .clear
-        setGradientBackground()
         tableView.backgroundColor = .clear
         
 //        setTitleCenterWithoutImage("Icot College", color: .icotColor)
