@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C275CF6245EA329004EFF35 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275CF5245EA329004EFF35 /* ServicesViewController.swift */; };
+		3C275CF8245EA342004EFF35 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275CF7245EA342004EFF35 /* CoursesViewController.swift */; };
+		3C275CFA245EA37D004EFF35 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275CF9245EA37D004EFF35 /* StudentsViewController.swift */; };
+		3C275CFE245EB856004EFF35 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275CFD245EB856004EFF35 /* NotificationsViewController.swift */; };
+		3C275D01245ECDB1004EFF35 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275CFF245ECDB1004EFF35 /* NotificationTableViewCell.swift */; };
+		3C275D02245ECDB1004EFF35 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C275D00245ECDB1004EFF35 /* NotificationTableViewCell.xib */; };
+		3C275D04245ECED3004EFF35 /* AppRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D03245ECED3004EFF35 /* AppRoundedView.swift */; };
+		3C275D08245ED045004EFF35 /* AppNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D06245ED044004EFF35 /* AppNibView.swift */; };
+		3C275D09245ED045004EFF35 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D07245ED044004EFF35 /* NibView.swift */; };
+		3C275D0B245ED080004EFF35 /* AppBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D0A245ED080004EFF35 /* AppBaseTableViewCell.swift */; };
 		3C472C622454489500D0E4A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C612454489500D0E4A5 /* AppDelegate.swift */; };
 		3C472C642454489500D0E4A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C632454489500D0E4A5 /* SceneDelegate.swift */; };
 		3C472C662454489500D0E4A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C652454489500D0E4A5 /* HomeViewController.swift */; };
@@ -25,11 +35,23 @@
 		3C4930F72455688400C6A2A4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4930F62455688400C6A2A4 /* WelcomeViewController.swift */; };
 		3CB7FE61245A9BCB00CBA4BC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE60245A9BCB00CBA4BC /* BaseViewController.swift */; };
 		3CB7FE63245AA36000CBA4BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE62245AA36000CBA4BC /* LoginViewController.swift */; };
-		3CB7FE65245AA3A500CBA4BC /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE64245AA3A500CBA4BC /* TourViewController.swift */; };
+		3CB7FE65245AA3A500CBA4BC /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE64245AA3A500CBA4BC /* PresentationViewController.swift */; };
 		3CB7FE68245AA67200CBA4BC /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE67245AA67200CBA4BC /* AppButton.swift */; };
+		3CB7FE6D245AD20700CBA4BC /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE6C245AD20700CBA4BC /* SkyFloatingLabelTextField.swift */; };
+		3CB7FE6F245AD60300CBA4BC /* UITextField+Adds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7FE6E245AD60300CBA4BC /* UITextField+Adds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C275CF5245EA329004EFF35 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		3C275CF7245EA342004EFF35 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		3C275CF9245EA37D004EFF35 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		3C275CFD245EB856004EFF35 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		3C275CFF245ECDB1004EFF35 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		3C275D00245ECDB1004EFF35 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		3C275D03245ECED3004EFF35 /* AppRoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoundedView.swift; sourceTree = "<group>"; };
+		3C275D06245ED044004EFF35 /* AppNibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNibView.swift; sourceTree = "<group>"; };
+		3C275D07245ED044004EFF35 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		3C275D0A245ED080004EFF35 /* AppBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseTableViewCell.swift; sourceTree = "<group>"; };
 		3C472C5E2454489500D0E4A5 /* Icot College.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Icot College.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C472C612454489500D0E4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C472C632454489500D0E4A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,8 +72,10 @@
 		3C4930F62455688400C6A2A4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3CB7FE60245A9BCB00CBA4BC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3CB7FE62245AA36000CBA4BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		3CB7FE64245AA3A500CBA4BC /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
+		3CB7FE64245AA3A500CBA4BC /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		3CB7FE67245AA67200CBA4BC /* AppButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		3CB7FE6C245AD20700CBA4BC /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		3CB7FE6E245AD60300CBA4BC /* UITextField+Adds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Adds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +89,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C275D05245ED044004EFF35 /* NibView */ = {
+			isa = PBXGroup;
+			children = (
+				3C275D06245ED044004EFF35 /* AppNibView.swift */,
+				3C275D07245ED044004EFF35 /* NibView.swift */,
+			);
+			name = NibView;
+			path = ../../../BetinBank/BetinBank/General/Views/NibView;
+			sourceTree = "<group>";
+		};
 		3C472C552454489500D0E4A5 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +164,7 @@
 			children = (
 				3C472C83245456A500D0E4A5 /* UIViewController+General.swift */,
 				3C472C8B2454E9B600D0E4A5 /* UINavigationBar+Adds.swift */,
+				3CB7FE6E245AD60300CBA4BC /* UITextField+Adds.swift */,
 				3C472C8D2454F81C00D0E4A5 /* UIView+Adds.swift */,
 				3C472C862454D4C500D0E4A5 /* UIColor+Adds.swift */,
 			);
@@ -141,6 +176,7 @@
 			children = (
 				3C472C652454489500D0E4A5 /* HomeViewController.swift */,
 				3C472C902454FA2D00D0E4A5 /* HomeViewController2.swift */,
+				3C275CFD245EB856004EFF35 /* NotificationsViewController.swift */,
 			);
 			path = "Home Controllers";
 			sourceTree = "<group>";
@@ -150,6 +186,8 @@
 			children = (
 				3C472C932455051800D0E4A5 /* ItemCollectionViewCell.swift */,
 				3C472C942455051800D0E4A5 /* ItemCollectionViewCell.xib */,
+				3C275CFF245ECDB1004EFF35 /* NotificationTableViewCell.swift */,
+				3C275D00245ECDB1004EFF35 /* NotificationTableViewCell.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -159,7 +197,10 @@
 			children = (
 				3C4930F62455688400C6A2A4 /* WelcomeViewController.swift */,
 				3CB7FE62245AA36000CBA4BC /* LoginViewController.swift */,
-				3CB7FE64245AA3A500CBA4BC /* TourViewController.swift */,
+				3CB7FE64245AA3A500CBA4BC /* PresentationViewController.swift */,
+				3C275CF5245EA329004EFF35 /* ServicesViewController.swift */,
+				3C275CF7245EA342004EFF35 /* CoursesViewController.swift */,
+				3C275CF9245EA37D004EFF35 /* StudentsViewController.swift */,
 			);
 			path = "Onboarding Controllers";
 			sourceTree = "<group>";
@@ -167,6 +208,8 @@
 		3CB7FE66245AA64C00CBA4BC /* Custom Components */ = {
 			isa = PBXGroup;
 			children = (
+				3C275D03245ECED3004EFF35 /* AppRoundedView.swift */,
+				3CB7FE6C245AD20700CBA4BC /* SkyFloatingLabelTextField.swift */,
 				3CB7FE67245AA67200CBA4BC /* AppButton.swift */,
 			);
 			path = "Custom Components";
@@ -175,6 +218,8 @@
 		3CB7FE69245AAC9700CBA4BC /* General */ = {
 			isa = PBXGroup;
 			children = (
+				3C275D0A245ED080004EFF35 /* AppBaseTableViewCell.swift */,
+				3C275D05245ED044004EFF35 /* NibView */,
 				3C472C85245456A800D0E4A5 /* Extensions */,
 				3CB7FE66245AA64C00CBA4BC /* Custom Components */,
 			);
@@ -241,6 +286,7 @@
 			files = (
 				3C472C6B2454489C00D0E4A5 /* Assets.xcassets in Resources */,
 				3C4930F42455680B00C6A2A4 /* Onboarding.storyboard in Resources */,
+				3C275D02245ECDB1004EFF35 /* NotificationTableViewCell.xib in Resources */,
 				3C472C962455051800D0E4A5 /* ItemCollectionViewCell.xib in Resources */,
 				3C472C7E2454508600D0E4A5 /* LaunchScreen.xib in Resources */,
 				3C472C692454489500D0E4A5 /* Main.storyboard in Resources */,
@@ -254,20 +300,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C275D0B245ED080004EFF35 /* AppBaseTableViewCell.swift in Sources */,
+				3C275D08245ED045004EFF35 /* AppNibView.swift in Sources */,
 				3C472C662454489500D0E4A5 /* HomeViewController.swift in Sources */,
+				3C275D04245ECED3004EFF35 /* AppRoundedView.swift in Sources */,
 				3C472C84245456A500D0E4A5 /* UIViewController+General.swift in Sources */,
+				3C275D09245ED045004EFF35 /* NibView.swift in Sources */,
 				3C4930F72455688400C6A2A4 /* WelcomeViewController.swift in Sources */,
 				3C472C622454489500D0E4A5 /* AppDelegate.swift in Sources */,
 				3C472C8C2454E9B600D0E4A5 /* UINavigationBar+Adds.swift in Sources */,
 				3CB7FE61245A9BCB00CBA4BC /* BaseViewController.swift in Sources */,
-				3CB7FE65245AA3A500CBA4BC /* TourViewController.swift in Sources */,
+				3C275CF6245EA329004EFF35 /* ServicesViewController.swift in Sources */,
+				3CB7FE65245AA3A500CBA4BC /* PresentationViewController.swift in Sources */,
+				3C275CFA245EA37D004EFF35 /* StudentsViewController.swift in Sources */,
+				3CB7FE6F245AD60300CBA4BC /* UITextField+Adds.swift in Sources */,
+				3C275D01245ECDB1004EFF35 /* NotificationTableViewCell.swift in Sources */,
 				3C472C8E2454F81C00D0E4A5 /* UIView+Adds.swift in Sources */,
 				3C472C952455051800D0E4A5 /* ItemCollectionViewCell.swift in Sources */,
+				3C275CFE245EB856004EFF35 /* NotificationsViewController.swift in Sources */,
+				3C275CF8245EA342004EFF35 /* CoursesViewController.swift in Sources */,
 				3CB7FE68245AA67200CBA4BC /* AppButton.swift in Sources */,
 				3C472C872454D4C500D0E4A5 /* UIColor+Adds.swift in Sources */,
 				3C472C80245450F300D0E4A5 /* LaunchScreenManager.swift in Sources */,
 				3C472C642454489500D0E4A5 /* SceneDelegate.swift in Sources */,
 				3CB7FE63245AA36000CBA4BC /* LoginViewController.swift in Sources */,
+				3CB7FE6D245AD20700CBA4BC /* SkyFloatingLabelTextField.swift in Sources */,
 				3C472C912454FA2D00D0E4A5 /* HomeViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

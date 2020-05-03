@@ -37,6 +37,10 @@ extension UIViewController {
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerIdentifier)
         viewController.modalPresentationStyle = .fullScreen
         viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        let transition = CATransition()
+        transition.duration = 0.6
+        transition.type = CATransitionType.fade
+        view.window?.layer.add(transition, forKey: nil)
         self.present(viewController, animated: true, completion: nil)
     }
 
@@ -151,4 +155,12 @@ extension UIViewController {
 
         self.view.layer.insertSublayer(gradientLayer, at:0)
     }
+}
+
+extension UIView {
+    func setTapWithTarget (_ target: Any?, andSelector: Selector? ) {
+           let tapGesture = UITapGestureRecognizer(target: target, action: andSelector)
+           self.addGestureRecognizer(tapGesture)
+           self.isUserInteractionEnabled = true
+       }
 }

@@ -81,7 +81,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="XDD-P6-Sze">
                         <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" image="bell" catalog="system" id="CsR-e5-Xsq"/>
+                        <barButtonItem key="rightBarButtonItem" image="bell" catalog="system" id="CsR-e5-Xsq">
+                            <connections>
+                                <segue destination="ysl-zM-E0t" kind="show" id="Rxl-lB-g74"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="headerSubview" destination="ORA-kH-0RF" id="WjY-rY-hlK"/>
@@ -93,6 +97,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--Notifications View Controller-->
+        <scene sceneID="6YE-BB-oPV">
+            <objects>
+                <viewController id="ysl-zM-E0t" customClass="NotificationsViewController" customModule="Icot_College" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmy-LJ-5oX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b5w-ZC-dPH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="XDf-cw-IXv">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XDf-cw-IXv" id="fJx-BL-WlM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ysl-zM-E0t" id="oAb-gh-QQE"/>
+                                    <outlet property="delegate" destination="ysl-zM-E0t" id="PD9-fo-CqA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="b5w-ZC-dPH" firstAttribute="top" secondItem="cHi-tH-CY2" secondAttribute="top" id="27R-Ag-atw"/>
+                            <constraint firstItem="b5w-ZC-dPH" firstAttribute="leading" secondItem="cHi-tH-CY2" secondAttribute="leading" id="7LP-eb-urt"/>
+                            <constraint firstItem="cHi-tH-CY2" firstAttribute="trailing" secondItem="b5w-ZC-dPH" secondAttribute="trailing" id="Qp1-7X-xhK"/>
+                            <constraint firstItem="cHi-tH-CY2" firstAttribute="bottom" secondItem="b5w-ZC-dPH" secondAttribute="bottom" id="m8A-kl-NhQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cHi-tH-CY2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bla-9M-E8D"/>
+                    <connections>
+                        <outlet property="tableView" destination="b5w-ZC-dPH" id="gJ8-Qq-zTx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bi7-A7-q0i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="-210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LrX-xR-V2s">

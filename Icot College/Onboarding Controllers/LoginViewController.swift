@@ -10,8 +10,16 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
+    @IBOutlet weak var loginStackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    @IBAction func loginAfter(_ sender: Any) {
+        showStoryboard(storyboardName: "Main", viewControllerIdentifier: "icotHome")
+    }
+    @IBAction func loginNow(_ sender: Any) {
+        loginStackView.isHidden = false
+    }
 }

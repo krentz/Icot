@@ -8,11 +8,10 @@
 
 import UIKit
 
-class TourViewController: BaseViewController {
+class PresentationViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     
 }
