@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Kmp-gs-Hvz" customClass="StudentCollectionViewCell" customModule="Icot_College" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="188"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="188"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOc-b3-ZL5">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="188"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="icotWhiteLogo" translatesAutoresizingMaskIntoConstraints="NO" id="013-M6-EoN">
+                                <rect key="frame" x="10" y="10" width="132" height="137.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137.5" id="qWU-Jb-sFa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO7-0o-Ryb">
+                                <rect key="frame" x="10" y="157.5" width="132" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GO7-0o-Ryb" secondAttribute="bottom" constant="10" id="0eG-bo-A3X"/>
+                            <constraint firstItem="GO7-0o-Ryb" firstAttribute="leading" secondItem="013-M6-EoN" secondAttribute="leading" id="7FO-v9-4bs"/>
+                            <constraint firstItem="013-M6-EoN" firstAttribute="top" secondItem="NOc-b3-ZL5" secondAttribute="top" constant="10" id="7zy-zo-1T6"/>
+                            <constraint firstItem="GO7-0o-Ryb" firstAttribute="trailing" secondItem="013-M6-EoN" secondAttribute="trailing" id="Enb-yT-25J"/>
+                            <constraint firstItem="GO7-0o-Ryb" firstAttribute="top" secondItem="013-M6-EoN" secondAttribute="bottom" constant="10" id="T31-FQ-lSk"/>
+                            <constraint firstAttribute="trailing" secondItem="013-M6-EoN" secondAttribute="trailing" constant="10" id="Tfg-vB-kQy"/>
+                            <constraint firstItem="013-M6-EoN" firstAttribute="leading" secondItem="NOc-b3-ZL5" secondAttribute="leading" constant="10" id="rbN-Ah-3sd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NOc-b3-ZL5" firstAttribute="top" secondItem="Kmp-gs-Hvz" secondAttribute="top" id="S5b-mX-LR6"/>
+                <constraint firstAttribute="bottom" secondItem="NOc-b3-ZL5" secondAttribute="bottom" id="YpV-mn-OQq"/>
+                <constraint firstItem="NOc-b3-ZL5" firstAttribute="leading" secondItem="Kmp-gs-Hvz" secondAttribute="leading" id="joF-NF-l5c"/>
+                <constraint firstAttribute="trailing" secondItem="NOc-b3-ZL5" secondAttribute="trailing" id="kXS-ck-dKx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="WKq-wF-RPG"/>
+            <size key="customSize" width="152" height="204"/>
+            <connections>
+                <outlet property="brandName" destination="GO7-0o-Ryb" id="W1S-15-koH"/>
+                <outlet property="productImageView" destination="013-M6-EoN" id="JTT-Yy-c8M"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="223.66071428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icotWhiteLogo" width="83" height="90"/>
+    </resources>
+</document>

@@ -16,7 +16,14 @@
 		3C275D04245ECED3004EFF35 /* AppRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D03245ECED3004EFF35 /* AppRoundedView.swift */; };
 		3C275D08245ED045004EFF35 /* AppNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D06245ED044004EFF35 /* AppNibView.swift */; };
 		3C275D09245ED045004EFF35 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D07245ED044004EFF35 /* NibView.swift */; };
-		3C275D0B245ED080004EFF35 /* AppBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D0A245ED080004EFF35 /* AppBaseTableViewCell.swift */; };
+		3C275D0B245ED080004EFF35 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D0A245ED080004EFF35 /* BaseTableViewCell.swift */; };
+		3C275D0E245EF5B3004EFF35 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275D0D245EF5B3004EFF35 /* File.swift */; };
+		3C275DA32466EF75004EFF35 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275DA12466EF74004EFF35 /* StudentTableViewCell.swift */; };
+		3C275DA42466EF75004EFF35 /* StudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C275DA22466EF74004EFF35 /* StudentTableViewCell.xib */; };
+		3C275DA72466F22A004EFF35 /* StudentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275DA52466F22A004EFF35 /* StudentCollectionViewCell.swift */; };
+		3C275DA82466F22A004EFF35 /* StudentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C275DA62466F22A004EFF35 /* StudentCollectionViewCell.xib */; };
+		3C275DAA2466F263004EFF35 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275DA92466F263004EFF35 /* BaseCollectionViewCell.swift */; };
+		3C275DAC2466FC30004EFF35 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275DAB2466FC30004EFF35 /* StudentModel.swift */; };
 		3C472C622454489500D0E4A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C612454489500D0E4A5 /* AppDelegate.swift */; };
 		3C472C642454489500D0E4A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C632454489500D0E4A5 /* SceneDelegate.swift */; };
 		3C472C662454489500D0E4A5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C652454489500D0E4A5 /* HomeViewController.swift */; };
@@ -51,7 +58,14 @@
 		3C275D03245ECED3004EFF35 /* AppRoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoundedView.swift; sourceTree = "<group>"; };
 		3C275D06245ED044004EFF35 /* AppNibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNibView.swift; sourceTree = "<group>"; };
 		3C275D07245ED044004EFF35 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
-		3C275D0A245ED080004EFF35 /* AppBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseTableViewCell.swift; sourceTree = "<group>"; };
+		3C275D0A245ED080004EFF35 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		3C275D0D245EF5B3004EFF35 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		3C275DA12466EF74004EFF35 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		3C275DA22466EF74004EFF35 /* StudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentTableViewCell.xib; sourceTree = "<group>"; };
+		3C275DA52466F22A004EFF35 /* StudentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C275DA62466F22A004EFF35 /* StudentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentCollectionViewCell.xib; sourceTree = "<group>"; };
+		3C275DA92466F263004EFF35 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C275DAB2466FC30004EFF35 /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 		3C472C5E2454489500D0E4A5 /* Icot College.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Icot College.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C472C612454489500D0E4A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C472C632454489500D0E4A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +113,27 @@
 			path = ../../../BetinBank/BetinBank/General/Views/NibView;
 			sourceTree = "<group>";
 		};
+		3C275D0C245EF3D6004EFF35 /* AppBase */ = {
+			isa = PBXGroup;
+			children = (
+				3CB7FE60245A9BCB00CBA4BC /* BaseViewController.swift */,
+				3C275D0A245ED080004EFF35 /* BaseTableViewCell.swift */,
+				3C275DA92466F263004EFF35 /* BaseCollectionViewCell.swift */,
+			);
+			path = AppBase;
+			sourceTree = "<group>";
+		};
+		3C275DA02466EEC9004EFF35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C275DA12466EF74004EFF35 /* StudentTableViewCell.swift */,
+				3C275DA22466EF74004EFF35 /* StudentTableViewCell.xib */,
+				3C275DA52466F22A004EFF35 /* StudentCollectionViewCell.swift */,
+				3C275DA62466F22A004EFF35 /* StudentCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3C472C552454489500D0E4A5 = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +156,6 @@
 			children = (
 				3C472C612454489500D0E4A5 /* AppDelegate.swift */,
 				3C472C632454489500D0E4A5 /* SceneDelegate.swift */,
-				3CB7FE60245A9BCB00CBA4BC /* BaseViewController.swift */,
 				3CB7FE69245AAC9700CBA4BC /* General */,
 				3C472C7724544B9900D0E4A5 /* Storyboards */,
 				3C472C8F2454F9F500D0E4A5 /* Home Controllers */,
@@ -167,6 +201,7 @@
 				3CB7FE6E245AD60300CBA4BC /* UITextField+Adds.swift */,
 				3C472C8D2454F81C00D0E4A5 /* UIView+Adds.swift */,
 				3C472C862454D4C500D0E4A5 /* UIColor+Adds.swift */,
+				3C275D0D245EF5B3004EFF35 /* File.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -174,6 +209,7 @@
 		3C472C8F2454F9F500D0E4A5 /* Home Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C275DA02466EEC9004EFF35 /* Views */,
 				3C472C652454489500D0E4A5 /* HomeViewController.swift */,
 				3C472C902454FA2D00D0E4A5 /* HomeViewController2.swift */,
 				3C275CFD245EB856004EFF35 /* NotificationsViewController.swift */,
@@ -218,7 +254,8 @@
 		3CB7FE69245AAC9700CBA4BC /* General */ = {
 			isa = PBXGroup;
 			children = (
-				3C275D0A245ED080004EFF35 /* AppBaseTableViewCell.swift */,
+				3C275DAB2466FC30004EFF35 /* StudentModel.swift */,
+				3C275D0C245EF3D6004EFF35 /* AppBase */,
 				3C275D05245ED044004EFF35 /* NibView */,
 				3C472C85245456A800D0E4A5 /* Extensions */,
 				3CB7FE66245AA64C00CBA4BC /* Custom Components */,
@@ -286,7 +323,9 @@
 			files = (
 				3C472C6B2454489C00D0E4A5 /* Assets.xcassets in Resources */,
 				3C4930F42455680B00C6A2A4 /* Onboarding.storyboard in Resources */,
+				3C275DA42466EF75004EFF35 /* StudentTableViewCell.xib in Resources */,
 				3C275D02245ECDB1004EFF35 /* NotificationTableViewCell.xib in Resources */,
+				3C275DA82466F22A004EFF35 /* StudentCollectionViewCell.xib in Resources */,
 				3C472C962455051800D0E4A5 /* ItemCollectionViewCell.xib in Resources */,
 				3C472C7E2454508600D0E4A5 /* LaunchScreen.xib in Resources */,
 				3C472C692454489500D0E4A5 /* Main.storyboard in Resources */,
@@ -300,10 +339,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C275D0B245ED080004EFF35 /* AppBaseTableViewCell.swift in Sources */,
+				3C275D0B245ED080004EFF35 /* BaseTableViewCell.swift in Sources */,
+				3C275DAC2466FC30004EFF35 /* StudentModel.swift in Sources */,
+				3C275DA72466F22A004EFF35 /* StudentCollectionViewCell.swift in Sources */,
 				3C275D08245ED045004EFF35 /* AppNibView.swift in Sources */,
 				3C472C662454489500D0E4A5 /* HomeViewController.swift in Sources */,
 				3C275D04245ECED3004EFF35 /* AppRoundedView.swift in Sources */,
+				3C275DAA2466F263004EFF35 /* BaseCollectionViewCell.swift in Sources */,
 				3C472C84245456A500D0E4A5 /* UIViewController+General.swift in Sources */,
 				3C275D09245ED045004EFF35 /* NibView.swift in Sources */,
 				3C4930F72455688400C6A2A4 /* WelcomeViewController.swift in Sources */,
@@ -311,11 +353,13 @@
 				3C472C8C2454E9B600D0E4A5 /* UINavigationBar+Adds.swift in Sources */,
 				3CB7FE61245A9BCB00CBA4BC /* BaseViewController.swift in Sources */,
 				3C275CF6245EA329004EFF35 /* ServicesViewController.swift in Sources */,
+				3C275DA32466EF75004EFF35 /* StudentTableViewCell.swift in Sources */,
 				3CB7FE65245AA3A500CBA4BC /* PresentationViewController.swift in Sources */,
 				3C275CFA245EA37D004EFF35 /* StudentsViewController.swift in Sources */,
 				3CB7FE6F245AD60300CBA4BC /* UITextField+Adds.swift in Sources */,
 				3C275D01245ECDB1004EFF35 /* NotificationTableViewCell.swift in Sources */,
 				3C472C8E2454F81C00D0E4A5 /* UIView+Adds.swift in Sources */,
+				3C275D0E245EF5B3004EFF35 /* File.swift in Sources */,
 				3C472C952455051800D0E4A5 /* ItemCollectionViewCell.swift in Sources */,
 				3C275CFE245EB856004EFF35 /* NotificationsViewController.swift in Sources */,
 				3C275CF8245EA342004EFF35 /* CoursesViewController.swift in Sources */,

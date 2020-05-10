@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppBaseTableViewCell: UITableViewCell {
+class BaseTableViewCell: UITableViewCell {
     static var nib:UINib {
         return UINib(nibName: identifier, bundle: nil)
     }

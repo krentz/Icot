@@ -8,13 +8,23 @@
 
 import UIKit
 
+enum HomeSections {
+    case headerBanner
+    case toStudent // attendence(gráfico com o quanto mais pode ou n faltars), vaccations,request form, refund form, importante dates, external exams, policies, adminission criteria
+    case noStudent // quem somos, prices(cursos), videos, docs infos(student life), services(accomodation...),
+    case newArrivals
+    case contact
+}
+
 class HomeViewController: BaseViewController {
 
     @IBOutlet weak var notificationBartButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var headerView: UIView!
-    
     @IBOutlet weak var headerSubview: UIView!
+    
+    var sections : [HomeSections] = []
+    var studentList: [StudentMenuItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +32,6 @@ class HomeViewController: BaseViewController {
     }
     
     func baseInit(){
-        
-        //set bar style
         notificationBartButtonItem.tintColor = .white
         DispatchQueue.main.async {
             self.notificationBartButtonItem.addBadge(number: 2)
@@ -31,72 +39,130 @@ class HomeViewController: BaseViewController {
         headerSubview.backgroundColor = .clear
         tableView.backgroundColor = .clear
         
-//        setTitleCenterWithoutImage("Icot College", color: .icotColor)
-//        notificationBartButtonItem.tintColor = .icotColor
-//        tableView.backgroundColor = .icotColor
-//        headerView.backgroundColor = .clear
+        tableView.tableFooterView = UIView(frame: .zero)
         
+        studentList = [StudentMenuItem(title: "Important dates Important dates", image: "kk"),
+                       StudentMenuItem(title: "Teste 2", image: "ss"),
+                       StudentMenuItem(title: "Teste 3", image: "ss"),
+                       StudentMenuItem(title: "Teste 4", image: "ss")]
+        
+        sections = [
+            HomeSections.toStudent,
+            HomeSections.toStudent,
+            HomeSections.toStudent,
+            HomeSections.toStudent,
+            HomeSections.toStudent
+        ]
+        
+        tableView.register(StudentTableViewCell.nib, forCellReuseIdentifier: StudentTableViewCell.identifier)
        
-       // headerSubview.roundCorners(corners: [.bottomLeft, .bottomRight], radius: 20)
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        
+       // self.navigationItem.title = "Home"
+        //navigationController?.navigationBar.prefersLargeTitles = true
+        
+        tableView.reloadData()
         
     }
 
 }
 
-extension CAShapeLayer {
-    func drawCircleAtLocation(location: CGPoint, withRadius radius: CGFloat, andColor color: UIColor, filled: Bool) {
-        fillColor = filled ? color.cgColor : UIColor.white.cgColor
-        strokeColor = color.cgColor
-        let origin = CGPoint(x: location.x - radius, y: location.y - radius)
-        path = UIBezierPath(ovalIn: CGRect(origin: origin, size: CGSize(width: radius * 2, height: radius * 2))).cgPath
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
     }
-}
-
-private var handle: UInt8 = 0
-
-extension UIBarButtonItem {
-    private var badgeLayer: CAShapeLayer? {
-        if let b: AnyObject = objc_getAssociatedObject(self, &handle) as AnyObject? {
-            return b as? CAShapeLayer
-        } else {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let section = sections[section]
+        switch section {
+        case .toStudent:
+            return 1
+        case .headerBanner:
+            return 1
+        case .noStudent:
+            return 1
+        case .newArrivals:
+            return 1
+        case .contact:
+            return 1
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let section = sections[indexPath.section]
+        
+        switch section {
+         case .toStudent:
+            let cell = tableView.dequeueReusableCell(withIdentifier: StudentTableViewCell.identifier, for: indexPath) as! StudentTableViewCell
+            cell.studentList = studentList
+            cell.delegate = self
+            return cell
+        case .headerBanner:
+            let cell = tableView.dequeueReusableCell(withIdentifier: StudentTableViewCell.identifier, for: indexPath) as! StudentTableViewCell
+            //cell.makeupList = makeupList
+            cell.delegate = self
+            return cell
+        case .noStudent:
+            let cell = tableView.dequeueReusableCell(withIdentifier: StudentTableViewCell.identifier, for: indexPath) as! StudentTableViewCell
+            //cell.makeupList = makeupList
+            cell.delegate = self
+            return cell
+        case .newArrivals:
+            let cell = tableView.dequeueReusableCell(withIdentifier: StudentTableViewCell.identifier, for: indexPath) as! StudentTableViewCell
+            //cell.makeupList = makeupList
+            cell.delegate = self
+            return cell
+        case .contact:
+            let cell = tableView.dequeueReusableCell(withIdentifier: StudentTableViewCell.identifier, for: indexPath) as! StudentTableViewCell
+            //cell.makeupList = makeupList
+            cell.delegate = self
+            return cell
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let section = sections[indexPath.section]
+        
+        switch section {
+        case .toStudent:
+            return 216
+        default:
+            return 216
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let section = sections[section]
+        let myLabel = UILabel()
+        myLabel.frame = CGRect(x: 16, y: 0, width: 320, height: 20)
+        myLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        
+        let headerView = UIView()
+        headerView.addSubview(myLabel)
+        
+        switch section {
+        case .toStudent:
+            myLabel.text = "Estudante"
+            myLabel.textColor = .white
+            return headerView
+        default:
             return nil
         }
     }
-
-    func addBadge(number: Int, withOffset offset: CGPoint = CGPoint.zero, andColor color: UIColor = UIColor.red, andFilled filled: Bool = true) {
-        guard let view = self.value(forKey: "view") as? UIView else { return }
-
-        badgeLayer?.removeFromSuperlayer()
-
-        // Initialize Badge
-        let badge = CAShapeLayer()
-        let radius = CGFloat(7)
-        let location = CGPoint(x: view.frame.width - (radius + offset.x), y: (radius + offset.y))
-        badge.drawCircleAtLocation(location: location, withRadius: radius, andColor: color, filled: filled)
-        view.layer.addSublayer(badge)
-
-        // Initialiaze Badge's label
-        let label = CATextLayer()
-        label.string = "\(number)"
-        label.alignmentMode = CATextLayerAlignmentMode.center
-        label.fontSize = 11
-        label.frame = CGRect(origin: CGPoint(x: location.x - 4, y: offset.y), size: CGSize(width: 8, height: 16))
-        label.foregroundColor = filled ? UIColor.white.cgColor : color.cgColor
-        label.backgroundColor = UIColor.clear.cgColor
-        label.contentsScale = UIScreen.main.scale
-        badge.addSublayer(label)
-
-        // Save Badge as UIBarButtonItem property
-        objc_setAssociatedObject(self, &handle, badge, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
     }
+    
+}
 
-    func updateBadge(number: Int) {
-        if let text = badgeLayer?.sublayers?.filter({ $0 is CATextLayer }).first as? CATextLayer {
-            text.string = "\(number)"
-        }
+extension HomeViewController: StudentTableViewCellDelegate {
+    func studentTableViewCell(_ cell: StudentTableViewCell, didTap item: StudentMenuItem) {
+        //chosenMakeup = item
     }
-
-    func removeBadge() {
-        badgeLayer?.removeFromSuperlayer()
-    }
+    
+    
 }
