@@ -10,6 +10,7 @@ import UIKit
 
 enum HomeSections {
     case headerBanner
+    case attendenceChart
     case toStudent // attendence(gráfico com o quanto mais pode ou n faltars), vaccations,request form, refund form, importante dates, external exams, policies, adminission criteria
     case noStudent // quem somos, prices(cursos), videos, docs infos(student life), services(accomodation...),
     case newArrivals
@@ -47,7 +48,7 @@ class HomeViewController: BaseViewController {
                        StudentMenuItem(title: "Teste 4", image: "ss")]
         
         sections = [
-            HomeSections.toStudent,
+            HomeSections.attendenceChart,
             HomeSections.toStudent,
             HomeSections.toStudent,
             HomeSections.toStudent,
@@ -55,6 +56,7 @@ class HomeViewController: BaseViewController {
         ]
         
         tableView.register(StudentTableViewCell.nib, forCellReuseIdentifier: StudentTableViewCell.identifier)
+        tableView.register(ChartTableViewCell.nib, forCellReuseIdentifier: ChartTableViewCell.identifier)
        
         self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
@@ -78,6 +80,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let section = sections[section]
         switch section {
         case .toStudent:
+            return 1
+       case .attendenceChart:
             return 1
         case .headerBanner:
             return 1
@@ -104,6 +108,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             //cell.makeupList = makeupList
             cell.delegate = self
             return cell
+        case .attendenceChart:
+            let cell = tableView.dequeueReusableCell(withIdentifier: ChartTableViewCell.identifier, for: indexPath) as! ChartTableViewCell
+            //cell.makeupList = makeupList
+           // cell.delegate = self
+            return cell
         case .noStudent:
             let cell = tableView.dequeueReusableCell(withIdentifier: StudentTableViewCell.identifier, for: indexPath) as! StudentTableViewCell
             //cell.makeupList = makeupList
@@ -129,6 +138,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         switch section {
         case .toStudent:
             return 216
+        case .attendenceChart:
+            return 200
         default:
             return 216
         }

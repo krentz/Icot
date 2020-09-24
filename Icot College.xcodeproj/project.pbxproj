@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C039A0F24E9BC6B00B54A15 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C039A0E24E9BC6B00B54A15 /* Charts.framework */; };
+		3C039A1524E9C91200B54A15 /* ChartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C039A1124E9C91100B54A15 /* ChartTableViewCell.xib */; };
+		3C039A1624E9C91200B54A15 /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C039A1224E9C91100B54A15 /* ChartTableViewCell.swift */; };
 		3C275CF6245EA329004EFF35 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275CF5245EA329004EFF35 /* ServicesViewController.swift */; };
 		3C275CF8245EA342004EFF35 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275CF7245EA342004EFF35 /* CoursesViewController.swift */; };
 		3C275CFA245EA37D004EFF35 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C275CF9245EA37D004EFF35 /* StudentsViewController.swift */; };
@@ -35,7 +38,6 @@
 		3C472C872454D4C500D0E4A5 /* UIColor+Adds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C862454D4C500D0E4A5 /* UIColor+Adds.swift */; };
 		3C472C8C2454E9B600D0E4A5 /* UINavigationBar+Adds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C8B2454E9B600D0E4A5 /* UINavigationBar+Adds.swift */; };
 		3C472C8E2454F81C00D0E4A5 /* UIView+Adds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C8D2454F81C00D0E4A5 /* UIView+Adds.swift */; };
-		3C472C912454FA2D00D0E4A5 /* HomeViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C902454FA2D00D0E4A5 /* HomeViewController2.swift */; };
 		3C472C952455051800D0E4A5 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C472C932455051800D0E4A5 /* ItemCollectionViewCell.swift */; };
 		3C472C962455051800D0E4A5 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C472C942455051800D0E4A5 /* ItemCollectionViewCell.xib */; };
 		3C4930F42455680B00C6A2A4 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4930F32455680B00C6A2A4 /* Onboarding.storyboard */; };
@@ -49,6 +51,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C039A0E24E9BC6B00B54A15 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = SOURCE_ROOT; };
+		3C039A1124E9C91100B54A15 /* ChartTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartTableViewCell.xib; sourceTree = "<group>"; };
+		3C039A1224E9C91100B54A15 /* ChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTableViewCell.swift; sourceTree = "<group>"; };
 		3C275CF5245EA329004EFF35 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		3C275CF7245EA342004EFF35 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		3C275CF9245EA37D004EFF35 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +84,6 @@
 		3C472C862454D4C500D0E4A5 /* UIColor+Adds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Adds.swift"; sourceTree = "<group>"; };
 		3C472C8B2454E9B600D0E4A5 /* UINavigationBar+Adds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Adds.swift"; sourceTree = "<group>"; };
 		3C472C8D2454F81C00D0E4A5 /* UIView+Adds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Adds.swift"; sourceTree = "<group>"; };
-		3C472C902454FA2D00D0E4A5 /* HomeViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController2.swift; sourceTree = "<group>"; };
 		3C472C932455051800D0E4A5 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		3C472C942455051800D0E4A5 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		3C4930F32455680B00C6A2A4 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
@@ -97,12 +101,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C039A0F24E9BC6B00B54A15 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C039A0B24E9BB3100B54A15 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3C039A0E24E9BC6B00B54A15 /* Charts.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		3C275D05245ED044004EFF35 /* NibView */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +139,8 @@
 		3C275DA02466EEC9004EFF35 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C039A1224E9C91100B54A15 /* ChartTableViewCell.swift */,
+				3C039A1124E9C91100B54A15 /* ChartTableViewCell.xib */,
 				3C275DA12466EF74004EFF35 /* StudentTableViewCell.swift */,
 				3C275DA22466EF74004EFF35 /* StudentTableViewCell.xib */,
 				3C275DA52466F22A004EFF35 /* StudentCollectionViewCell.swift */,
@@ -138,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				3C472C602454489500D0E4A5 /* Icot College */,
+				3C039A0B24E9BB3100B54A15 /* Framework */,
 				3C472C7624544B8600D0E4A5 /* Resources */,
 				3C472C5F2454489500D0E4A5 /* Products */,
 			);
@@ -211,7 +227,6 @@
 			children = (
 				3C275DA02466EEC9004EFF35 /* Views */,
 				3C472C652454489500D0E4A5 /* HomeViewController.swift */,
-				3C472C902454FA2D00D0E4A5 /* HomeViewController2.swift */,
 				3C275CFD245EB856004EFF35 /* NotificationsViewController.swift */,
 			);
 			path = "Home Controllers";
@@ -273,6 +288,7 @@
 				3C472C5A2454489500D0E4A5 /* Sources */,
 				3C472C5B2454489500D0E4A5 /* Frameworks */,
 				3C472C5C2454489500D0E4A5 /* Resources */,
+				3C039A0A24E9BAAB00B54A15 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -326,6 +342,7 @@
 				3C275DA42466EF75004EFF35 /* StudentTableViewCell.xib in Resources */,
 				3C275D02245ECDB1004EFF35 /* NotificationTableViewCell.xib in Resources */,
 				3C275DA82466F22A004EFF35 /* StudentCollectionViewCell.xib in Resources */,
+				3C039A1524E9C91200B54A15 /* ChartTableViewCell.xib in Resources */,
 				3C472C962455051800D0E4A5 /* ItemCollectionViewCell.xib in Resources */,
 				3C472C7E2454508600D0E4A5 /* LaunchScreen.xib in Resources */,
 				3C472C692454489500D0E4A5 /* Main.storyboard in Resources */,
@@ -333,6 +350,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C039A0A24E9BAAB00B54A15 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C472C5A2454489500D0E4A5 /* Sources */ = {
@@ -347,6 +386,7 @@
 				3C275D04245ECED3004EFF35 /* AppRoundedView.swift in Sources */,
 				3C275DAA2466F263004EFF35 /* BaseCollectionViewCell.swift in Sources */,
 				3C472C84245456A500D0E4A5 /* UIViewController+General.swift in Sources */,
+				3C039A1624E9C91200B54A15 /* ChartTableViewCell.swift in Sources */,
 				3C275D09245ED045004EFF35 /* NibView.swift in Sources */,
 				3C4930F72455688400C6A2A4 /* WelcomeViewController.swift in Sources */,
 				3C472C622454489500D0E4A5 /* AppDelegate.swift in Sources */,
@@ -369,7 +409,6 @@
 				3C472C642454489500D0E4A5 /* SceneDelegate.swift in Sources */,
 				3CB7FE63245AA36000CBA4BC /* LoginViewController.swift in Sources */,
 				3CB7FE6D245AD20700CBA4BC /* SkyFloatingLabelTextField.swift in Sources */,
-				3C472C912454FA2D00D0E4A5 /* HomeViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +546,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R8ZX2P739G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,6 +568,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R8ZX2P739G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
